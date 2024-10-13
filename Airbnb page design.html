@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="icon" href="https://pluspng.com/img-png/airbnb-vector-png-airbnb-logo-airbnb-logo-877.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: "Exo 2", sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+        .card-1{
+            background-color: white;
+            width: 282px;
+            height: 350px;
+            /* border-radius: 5px; */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        .card-1:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h3,p{
+            margin: 10px;
+        }
+        .card-img img{
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+        }
+        .button{
+            padding: 0px 5px;
+            text-align: center;
+        }
+        button{
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100px;
+            border: none;
+        }
+        .details{
+            display: grid;
+            grid-template-columns: repeat( 4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .nav-logo img{
+            width: 80px;
+            height: auto;
+        }
+        input{
+            border: none;
+            width: 100px;
+        }
+        .nav-buttons{
+            display: flex;
+            gap: 5px;
+            justify-content: space-between;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            padding: 20px;
+            align-items: center;
+        }
+        .login{
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+        .login a{
+            text-decoration: none;
+            padding: 5px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            /* justify-content: space-between; */
+        }
+        ul a{
+            text-decoration: none;
+            color: black;
+        }
+        .bottom{
+            padding: 20px;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+        .fc-card{
+            width: 393px;
+            height: 338px;
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            /* padding: 20px; */
+            
+        }
+        .fc-card a{
+            text-decoration: none;
+            color: black;
+        }
+        .footer-card{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        footer a:hover:not(nav){
+            text-decoration: underline;
+        }
+        .social-media a{
+            text-decoration: none;
+            color: black;
+        }
+        .social-media{
+            padding-right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        footer{
+            margin: 0px;
+            padding: 0px;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Starts -->
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="https://pluspng.com/img-png/airbnb-logo-png-is-airbnb-safe-what-the-homestay-app-does-to-make-hosts-and-guests-secure-in-their-use-780.png" alt="airbnb-logo-0">
+            </div>
+            <div class="nav-buttons">
+                <input type="text" name="text" id="text" placeholder="Anywhere">
+                <input type="text" name="text" id="text" placeholder="Any Week">
+                <input type="text" name="text" id="text" placeholder="Add guests">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="login">
+                <a href="#">Guests</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="details">
+            <div class="card-1">
+                <div class="card-img">
+                <img src="https://i.ibb.co.com/3MyG8N8/29bbb1dc-be6c-4651-bc74-345eadcea134.webp" alt="29bbb1dc-be6c-4651-bc74-345eadcea134" border="0">
+                </div>
+                <h3>Levallois-Perret, France</h3>
+                <p>Stay with Annie. <br>Dec 5-10 <br> <strong>$98</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/DkFQtYr/088bc1e5-b559-473b-a417-b4b15f5e9267.webp" alt="088bc1e5-b559-473b-a417-b4b15f5e9267" border="0">                </div>
+                <h3>La Maravel, Paris</h3>
+                <p>Stay with James. <br>Oct 25-30 <br> <strong>$105</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/H7jTBNH/d0849e80-784b-4801-8971-7c413a4aa51e.webp" alt="d0849e80-784b-4801-8971-7c413a4aa51e" border="0">
+                </div>
+                <h3>Valencia, Spain</h3>
+                <p>Stay with Emilio <br>Nov 4-9 <br> <strong>$119</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/tZrVgQy/43e6db66-0f47-4e90-ad30-c3ad6a3d11c8.webp" alt="43e6db66-0f47-4e90-ad30-c3ad6a3d11c8" border="0">
+                </div>
+                <h3>Berlin, Germany</h3>
+                <p>Stay with Gunnar <br>Dec 5-10 <br> <strong>$158</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/8jmnLM1/748f8f9c-a500-4302-bf42-3005c61c492f.webp" alt="748f8f9c-a500-4302-bf42-3005c61c492f" border="0">
+                </div>
+                <h3>Glasgow City, UK</h3>
+                <p>Stay with Kristin <br>Oct 13-18 <br> <strong>$110</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/r6M9Cfz/fd8b1f24-fb73-474d-833d-4c55a0173168.webp" alt="fd8b1f24-fb73-474d-833d-4c55a0173168" border="0">
+                </div>
+                <h3>New Delhi, India</h3>
+                <p>Stay with Sufyn <br>Nov 11-16 <br> <strong>$33</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/6gNPqMm/49534a1c-1ca1-4306-bade-2676fb551827.webp" alt="49534a1c-1ca1-4306-bade-2676fb551827" border="0">
+                </div>
+                <h3>London, UK</h3>
+                <p>Stay with Ben <br>Dec 3-8 <br> <strong>$124</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+            <div class="card-1">
+                <div class="card-img">
+                    <img src="https://i.ibb.co.com/KLnTZKW/e3fd4091-7933-4f9e-af0c-a4a90712a738.webp" alt="e3fd4091-7933-4f9e-af0c-a4a90712a738" border="0">
+                </div>
+                <h3>Almaty, Kazakhstan</h3>
+                <p>Stay with Jons <br>Nov 21-26 <br> <strong>$58</strong> night</p>
+                <div class="button">
+                    <button type="submit">Click</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-card">
+            <div class="fc-card">
+                <strong>Support</strong>
+                <a href="#">Help Center</a>
+                <a href="#">AirCover</a>
+                <a href="#">Anti-discrimination</a>
+                <a href="#">Disability support</a>
+                <a href="#">Cancellation options</a>
+                <a href="#">Report neighborhood concern</a>
+            </div>
+            <div class="fc-card">
+                <strong>Hosting</strong>
+                <a href="#">Airbnb your home</a>
+                <a href="#">AirCover for Hosts</a>
+                <a href="#">Hosting resources</a>
+                <a href="#">Community forum</a>
+                <a href="#">Hosting responsibly</a>
+                <a href="#">Airbnb-friendly apartments</a>
+                <a href="#">Join a free Hosting class</a>
+            </div>
+            <div class="fc-card">
+                <strong>Airbnb</strong>
+                <a href="#">Newsroom</a>
+                <a href="#">New features</a>
+                <a href="#">Careers</a>
+                <a href="#">Investors</a>
+                <a href="#">Gift cards</a>
+                <a href="#">Airbnb.org emergency stays</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bottom">
+                <span>© 2024 Airbnb, Inc.</span>
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Your Privacy Choices</a></li>
+            </ul>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <a href="#">English (US)</a>
+                <a href="#">$ USD</a>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
